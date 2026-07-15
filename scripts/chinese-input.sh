@@ -22,7 +22,8 @@ elif command -v apt >/dev/null 2>&1; then
     sudo apt install -y \
         fcitx5 \
         fcitx5-chinese-addons \
-        kde-config-fcitx5
+        kde-config-fcitx5 \
+        fcitx5-autostart
 
 else
     echo "Unsupported package manager."
