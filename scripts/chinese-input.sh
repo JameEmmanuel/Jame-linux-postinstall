@@ -12,7 +12,8 @@ if command -v dnf >/dev/null 2>&1; then
     sudo dnf install -y \
         fcitx5 \
         fcitx5-chinese-addons \
-        kcm-fcitx5
+        kcm-fcitx5 \
+        fcitx5-autostart
 
 elif command -v apt >/dev/null 2>&1; then
     echo "Detected Debian/Ubuntu."
@@ -22,8 +23,7 @@ elif command -v apt >/dev/null 2>&1; then
     sudo apt install -y \
         fcitx5 \
         fcitx5-chinese-addons \
-        kde-config-fcitx5 \
-        fcitx5-autostart
+        kde-config-fcitx5
 
 else
     echo "Unsupported package manager."
