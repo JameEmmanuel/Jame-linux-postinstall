@@ -1,0 +1,11 @@
+# debian-server.toml
+
+auto_execute = [
+    "Fastfetch",
+    "Numlock on Startup",
+    "SSH Samba",
+    "Docker"
+]
+
+skip_confirmation = true
+size_bypass = true

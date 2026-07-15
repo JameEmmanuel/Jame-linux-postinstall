@@ -1,0 +1,10 @@
+# fedora-extra-software.toml
+
+auto_execute = [
+    "Discord",
+    "VS Codium",
+    "Virtualization"
+]
+
+skip_confirmation = true
+size_bypass = true

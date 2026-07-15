@@ -1,0 +1,14 @@
+# fedora-desktop.toml
+
+auto_execute = [
+    "Flatpak / Flathub",
+    "Fastfetch",
+    "Zoom",
+    "Configure DNF",
+    "RPM Fusion",
+    "Numlock on Startup",
+    "SSH Samba"
+]
+
+skip_confirmation = true
+size_bypass = true
