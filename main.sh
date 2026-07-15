@@ -65,6 +65,11 @@ case "$choice" in
 1)
     echo -e "${GREEN}Running Fedroa desktop setup...${RESET}"
 
+    # Install Topgrade first
+    echo "Install Topgrade..."
+    sudo dnf copr enable lilay/topgrade && sudo dnf install topgrade
+    echo "Topgrade installed"
+
     curl -fsSL https://christitus.com/linux -o /tmp/linutil.sh
 
     bash /tmp/linutil.sh \
