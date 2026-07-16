@@ -2,7 +2,7 @@
 
 set -e
 
-echo "Installing Chinese input on Fedora..."
+echo "Installing Chinese input..."
 
 if command -v dnf >/dev/null 2>&1; then
     echo "Detected Fedora."
@@ -25,9 +25,18 @@ elif command -v apt >/dev/null 2>&1; then
         fcitx5-chinese-addons \
         kde-config-fcitx5
 
+elif command -v pacman >/dev/null 2>&1; then
+    echo "Detected Arch."
+    sudo pacman -Syu --noconfirm
+
+    sudo pacman -S --noconfirm \
+        fcitx5 \
+        fcitx5-chinese-addons \
+        fcitx5-configtool
+
 else
     echo "Unsupported package manager."
-    echo "Supported: Fedora (dnf), Debian/Ubuntu (apt)"
+    echo "Supported: Arch (pacman), Fedora (dnf), Debian/Ubuntu (apt)"
     exit 1
 fi
 
