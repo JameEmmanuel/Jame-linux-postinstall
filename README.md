@@ -16,6 +16,7 @@ This project is designed to automate common post-installation tasks so a new sys
 
 ## Supported Distributions
 
+- Arch
 - Fedora
 - Debian
 
