@@ -53,7 +53,7 @@ echo
 echo "1) Fedora Desktop setup"
 echo "2) Fedora Extra software"
 echo "3) Debian Server setup"
-echo "4) Debian Minimal KDE"
+echo "4) Install Minimal KDE"
 echo "5) Chinese input method (Fcitx5)"
 echo "0) Exit"
 echo
