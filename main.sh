@@ -55,6 +55,7 @@ echo "2) Fedora Extra software"
 echo "3) Debian Server setup"
 echo "4) Install Minimal KDE"
 echo "5) Chinese input method (Fcitx5)"
+echo "6) Fedora automatic security updates"
 echo "0) Exit"
 echo
 
@@ -63,7 +64,7 @@ read -p "Choice: " choice
 case "$choice" in
 
 1)
-    echo -e "${GREEN}Running Fedroa desktop setup...${RESET}"
+    echo -e "${GREEN}Running Fedora desktop setup...${RESET}"
 
     # Install Topgrade first
     echo "Install Topgrade..."
@@ -104,6 +105,12 @@ case "$choice" in
     echo -e "${GREEN}Installing Chinese input method on Fedora KDE...${RESET}"
 
     bash "$SCRIPT_DIR/scripts/chinese-input.sh"
+    ;;
+
+6)
+    echo -e "${GREEN}Configuring Fedora automatic security updates...${RESET}"
+
+    bash "$SCRIPT_DIR/scripts/setup-dnf-automatic.sh"
     ;;
 
 0)
