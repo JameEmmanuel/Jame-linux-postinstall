@@ -32,6 +32,7 @@ elif command -v dnf >/dev/null 2>&1; then
         plasma-discover \
         plasma-desktop \
         plasma-login-manager \
+        kde-gtk-config \
         firefox
     
     # Enable display manager
